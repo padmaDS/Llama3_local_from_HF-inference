@@ -80,14 +80,14 @@ def generate_answer(question, context):
     return query_llama3(prompt, formatted_context)
 
 # Load and split documents
-urls = ["https://www.meraevents.com/faq", "https://www.meraevents.com/pricing", "https://www.meraevents.com/support"]
+urls = ["url1", "url2", "url3"]
 documents = load_and_split_documents(urls)
 vectorstore = setup_vector_store(documents)
 
 # Create Flask app
 app = Flask(__name__)
 
-@app.route('/mera-events', methods=['POST'])
+@app.route('/events', methods=['POST'])
 def ask():
     data = request.json
     question = data.get('query')
