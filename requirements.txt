@@ -1,0 +1,13 @@
+requests
+langchain-community
+langchain
+faiss-cpu
+unstructured
+unstructured[pdf]
+transformer
+sentence-transformers
+Flask
+python-dotenv
+langchain-embedding-huggingface
+chromadb
+langchain_huggingface
